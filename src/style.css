@@ -50,11 +50,244 @@ html,body{
   left: 0;
 }
 
+.mobNavbar {
+    display: none;
+}
+
+
+
 @media screen and (max-width: 768px) {
 
 
 a.text-center.border.border-white.rounded-\[50px\].p-\[10px\].text-\[20px\].font-medium.w-\[12\%\].text-white.cursor-pointer{
   width: 50%;
 }
-  
+
+h1.text-\[64px\].font-semibold.text-white.flex.leading-\[74px\].text-center{
+  font-size: 30px;
+  line-height: 40px;
 }
+
+.hero-sections.flex.w-\[100\%\].justify-around.pt-\[50px\] {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sec-1.flex.flex-col.gap-y-\[10px\].p-\[25px\].bg-\[\#FFFFFF1F\].text-center.w-\[30\%\]  {
+  width: 90%;
+}
+.sec-2.flex.flex-col.gap-y-\[10px\].p-\[25px\].bg-\[\#FFFFFF1F\].text-center.w-\[30\%\]  {
+  width: 90%;
+}
+.sec-3.flex.flex-col.gap-y-\[10px\].p-\[25px\].bg-\[\#FFFFFF1F\].text-center.w-\[30\%\]  {
+  width: 90%;
+}
+
+.left.gap-\[60px\].flex.flex-col.w-\[50\%\].content-start.justify-center {
+    padding-inline: 20px;
+    width: 100%;
+
+}
+
+div#check1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+a.text-center.border.border-black.rounded-\[50px\].p-\[10px\].text-\[20px\].font-medium.w-\[20\%\].cursor-pointer {
+    width: 50%;
+}
+
+a.text-center.border.border-black.rounded-\[50px\].p-\[10px\].text-\[20px\].font-medium.w-\[20\%\].cursor-pointer {
+    width: 50%;
+}
+
+div#check1 .right {
+    padding-left: 20px;
+}
+
+
+.left.gap-\[60px\].flex.flex-col.w-\[50\%\].content-start.justify-center {
+    gap: 30px;
+}
+
+div#check2 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+
+h1.text-\[48px\].font-semibold.flex.leading-\[58px\] {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.right.gap-\[60px\].flex.flex-col.w-\[50\%\].content-start.justify-center.pl-\[85px\] {
+    width: 100%;
+}
+
+.right.gap-\[60px\].flex.flex-col.w-\[50\%\].content-start.justify-center.pl-\[85px\] {
+    padding-left: 35px;
+    gap: 30px;
+}
+
+h1.text-\[48px\].font-semibold.flex.leading-\[58px\] {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+div#check2 .right {
+    padding-left: 20px;
+}
+
+div#check2 .left {
+    padding-left: 20px;
+}
+
+.w-\[100\%\].flex.flex-col.items-center.gap-\[20px\] p {
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.inner-sections.flex.w-\[100\%\].justify-around.pt-\[50px\] {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+
+h1.flex.text-black.font-semibold {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer.bg-\[\#000\].max-w-\[1400px\].flex.py-\[50px\].flex-col.align-center.text-\[20px\].align-center.text-center.px-\[100px\].gap-\[20px\] {
+    padding-inline: 50px;
+}
+
+.w-\[33\.3\%\].flex.flex-col.items-center.gap-\[20px\].text-left {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.w-\[100\%\].flex.flex-row {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.w-\[33\.3\%\].flex.flex-col.items-center.gap-\[20px\].text-left {
+    align-items: baseline;
+}
+
+img.max-w-\[4\%\].h-\[auto\].py-\[10px\] {
+    max-width: 10%;
+}
+
+/* General Styling */
+.navbar {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding: 30px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-left img {
+  max-width: 150px;
+  height: auto;
+}
+
+.nav-right ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-right li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive for Mobile */
+  .hamburger {
+    display: block;
+  }
+
+  .nav-right {
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute;
+    /* top: 100%; */
+    left: 0;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .nav-right.open {
+    display: block;
+  }
+
+  .nav-right ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+.navbar.max-w-\[1400px\].w-\[100\%\].mx-\[15px\].py-\[30px\].flex.flex-row {
+    display: none;
+}
+
+.mobNavbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 10px;
+        align-items: baseline;
+    }
+
+
+       .nav-right.open {
+        display: block;
+        width: 40%;
+        top: 5%;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+
