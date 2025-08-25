@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.css"; // Link to the CSS file below
+import { Link } from "react-router-dom";
 
 const mobNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,15 +22,15 @@ const mobNavbar = () => {
 
       {/* Menu Items */}
       <div className={`nav-right ${menuOpen ? "open" : ""}`}>
-        <ul>
-          <li><a href="https://rogarcomm.com/">Home</a></li>
-          <li>Services</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Privacy Policy</li>
-          <li>Refund Policy</li>
-          <li>Terms and Conditions</li>
-        </ul>
+        <ul className='flex gap-[30px]'>
+            <li><Link to="/">Home</Link></li>
+           <li><Link to="/services">Services</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Refund Policy</a></li>
+            <li><a>Terms and Conditions</a></li>
+          </ul>
       </div>
     </div>
   );
