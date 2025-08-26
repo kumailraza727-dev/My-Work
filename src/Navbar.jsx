@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css"; // Link to the CSS file below
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const mobNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,9 +28,9 @@ const mobNavbar = () => {
            <li><Link to="/services">Services</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Refund Policy</a></li>
-            <li><a>Terms and Conditions</a></li>
+            <li><HashLink smooth to="/#testimonials">Testimonials</HashLink></li>
+            {/* <li><a href="">Refund Policy</a></li>
+            <li><a>Terms and Conditions</a></li> */}
           </ul>
       </div>
     </div>

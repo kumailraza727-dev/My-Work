@@ -4,6 +4,7 @@ import EmailForm from './Emailform'
 import Navbar from './Navbar'
 import About from './About'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 export default function App() {
   return (
@@ -21,9 +22,9 @@ export default function App() {
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Refund Policy</a></li>
-            <li><a>Terms and Conditions</a></li>
+            <li><HashLink smooth to="/#testimonials">Testimonials</HashLink></li>
+            {/* <li><a href="">Refund Policy</a></li>
+            <li><a>Terms and Conditions</a></li> */}
           </ul>
         </div>
       </div>
